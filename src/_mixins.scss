@@ -1,0 +1,21 @@
+@mixin headerMix($font){
+    font-size: $font - 1
+}
+
+@mixin float($float:none) {
+    float: $float;
+}
+
+@mixin media($width){
+    @media screen and (max-width:$width) {
+        @content;
+    }
+}
+
+@mixin width($width:auto) {
+    width: $width;
+}
+
+@mixin height($height:auto) {
+    height: $height;
+}
